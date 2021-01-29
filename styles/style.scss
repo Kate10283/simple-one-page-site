@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+
+@keyframes animation {
+    from {
+        position: relative;
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        position: relative;
+        top: 0;
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Lemonada', cursive;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/forestbridge.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {  
+    font-size: 24px;
+    padding: 15px 20px;
+}
+
+.main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-text__header, .main-text__footer {
+    padding: 20px;
+}
+
+.main-text__header {
+    font-size: 65px;
+    text-transform: uppercase;
+    text-align: center;
+
+    animation: animation 1.5s forwards;
+}
+
+.line {
+    width: 40%;
+    border: none;
+    background-color: grey;
+    margin: auto;
+    height: 1px;
+}
+
+.main-text__footer {
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer {
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    padding: 15px 20px;
+}
